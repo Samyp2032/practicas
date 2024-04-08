@@ -12,4 +12,4 @@ else:
             print("El numero tiene 3 cifras")
         
         else:
-            print("El numero es de 4 cifras o es negativo no es posible ERROR")
+            print("El numero es de 4 cifras o es negativo ERROR")
