@@ -1,5 +1,5 @@
 
-    # Diccionario con los nombres y precios de las frutas
+    # Diccionario  nombres y precio de las frutas
 frutas = {
         "manzana": 10,
         "platano": 20,
@@ -13,18 +13,18 @@ print("Estos son las frutas con sus precios: ", frutas)
 while True:
         # Pedir nombre de la fruta y cantidad vendida
         fruta = input("Ingrese el nombre de la fruta: ").lower()
-        cantidad = int(input("Ingrese la cantidad vendida: "))
+        cantidad = int(input("Ingrese la cantidad que quiere: "))
 
-        # Verificar si la fruta existe en el diccionario
+        # Verificar si la fruta existe 
         if fruta in frutas:
-            precio_unitario = frutas[fruta]
-            precio_total = precio_unitario * cantidad
-            print(f"El precio total de {cantidad} {fruta} es: {precio_total} pesos")
+            precio = frutas[fruta]
+            precio_total = precio * cantidad
+            print(f"El precio  de {cantidad} {fruta} es: {precio_total} pesos")
         else:
-            print("¡Error! La fruta ingresada no está en el diccionario.")
+            print("La fruta ingresada no esta")
 
         # Preguntar si desea hacer otra consulta
-        continuar = input("¿Desea hacer otra consulta? (s/n): ").lower()
+        continuar = input("¿Desea otra fruta? (s/n): ").lower()
         if continuar != 's':
             break
        
