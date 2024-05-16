@@ -32,6 +32,6 @@ high_cases = covid[covid.new_cases > 1000]
 print(high_cases)
 #############################################
 
-from IPython.display import display
 with pd.option_context('display.max_rows', 100):
-    display(covid[covid.new_cases > 1000])
+    filtered_covid = covid[covid.new_cases > 1000]
+    print(filtered_covid)
